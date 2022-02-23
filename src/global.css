@@ -5,6 +5,7 @@
 :root{
     --primaryColor:#a9a9a9;
     --per-frame-size:32px;
+    --pixel-coef:2;
 }
 * { /* will be changed for a better reset-css doc soon */
     margin: 0;
@@ -15,7 +16,6 @@
 
 body{
     background: var(--primaryColor);
-    min-height: 100vh;
 }
 #app{
     min-height: 100vh;

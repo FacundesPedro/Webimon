@@ -1,16 +1,33 @@
 .charContainer{
-    width: calc(var(--per-frame-size) * 2);
-    height: calc(var(--per-frame-size) * 2);
+    width: calc(var(--per-frame-size) * var(--pixel-coef));
+    height: calc(var(--per-frame-size) * var(--pixel-coef));
     background: #FFF;
     overflow: hidden;
     background: transparent;
+    
 }
 .charContainer .charSpriteSheet{
-    animation: moveSpriteSheet steps(4) 1s infinite;
+    animation: walkingLoop steps(4) 1s infinite;
     width:calc(100% * 4);
     height: calc(100% * 4);
+    position: relative;
 }
-@keyframes moveSpriteSheet{
+.charShadow{
+    width: calc(var(--per-frame-size) * var(--pixel-coef));
+    height: calc(var(--per-frame-size) * var(--pixel-coef));
+    position: absolute;
+}
+.faceRight{
+    top: calc(-1 * var(--per-frame-size) * var(--pixel-coef));
+}
+.faceTop{
+    top: calc(-2 * var(--per-frame-size) * var(--pixel-coef));
+}
+.faceLeft{
+    top: calc(-3 * var(--per-frame-size) * var(--pixel-coef));
+}
+
+@keyframes walkingLoop{
     0%{
         transform: translate3d(0px,0,0);
     }
