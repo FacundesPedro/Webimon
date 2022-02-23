@@ -1,6 +1,6 @@
 .beckContainer{
-    width: calc(var(--per-frame-size) * 10);
-    height: calc(var(--per-frame-size) * 10);
+    width: calc(var(--per-frame-size) * 40);
+    height: calc(var(--per-frame-size) * 40);
     margin: 0 auto;
     border: 10px dashed;
 }
