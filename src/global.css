@@ -4,6 +4,7 @@
 }
 :root{
     --primaryColor:#a9a9a9;
+    --per-frame-size:32px;
 }
 * { /* will be changed for a better reset-css doc soon */
     margin: 0;
@@ -23,6 +24,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.pixelated{
+    image-rendering: pixelated;
 }
 
 

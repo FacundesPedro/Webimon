@@ -1,6 +1,6 @@
 import React from 'react'
 import { render } from 'react-dom'
-import App from './Components/app/App'
+import Map from './Components/map/Map'
 import './global.css'
 
-render(<App/>,document.getElementById('app'))
+render(<Map/>,document.getElementById('app'))

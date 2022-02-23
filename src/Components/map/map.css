@@ -1,0 +1,15 @@
+.beckContainer{
+    width: calc(var(--per-frame-size) * 10);
+    height: calc(var(--per-frame-size) * 10);
+    margin: 0 auto;
+    border: 10px dashed;
+}
+.beckContainer .beckgroud{
+    min-width: 100%;
+    min-height: 100%;
+    background: wheat;
+}
+
+
+
+

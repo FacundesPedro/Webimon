@@ -1,0 +1,20 @@
+.charContainer{
+    width: calc(var(--per-frame-size) * 2);
+    height: calc(var(--per-frame-size) * 2);
+    background: #FFF;
+    overflow: hidden;
+    background: transparent;
+}
+.charContainer .charSpriteSheet{
+    animation: moveSpriteSheet steps(4) 1s infinite;
+    width:calc(100% * 4);
+    height: calc(100% * 4);
+}
+@keyframes moveSpriteSheet{
+    0%{
+        transform: translate3d(0px,0,0);
+    }
+    100%{
+        transform: translate3d(-100%,0,0);
+    }
+}
