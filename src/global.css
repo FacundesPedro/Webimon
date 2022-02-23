@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'retro';
+    src: url('./assets/font/retro_computer_personal_use.ttf');
+}
+:root{
+    --primaryColor:#a9a9a9;
+}
+* { /* will be changed for a better reset-css doc soon */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'retro';
+}
+
+body{
+    background: var(--primaryColor);
+    min-height: 100vh;
+}
+#app{
+    min-height: 100vh;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
